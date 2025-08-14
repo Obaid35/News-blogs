@@ -55,4 +55,19 @@ Built with **Node.js, Express, EJS, and MongoDB (Mongoose)** following the **MVC
 ---
 
 ## 📂 Project Structure
+news-cms-project/
+│
+├── controllers/ # All controller files for handling logic
+├── middlewares/ # All middleware files
+├── models/ # Mongoose schemas
+├── public/ # Static assets (CSS, JS, images)
+├── routes/ # Express routes for frontend & backend
+├── views/ # EJS templates
+│ ├── admin/ # Admin panel views
+│ ├── partials/ # Admin panel views
+│ ├── / # Frontend views
+│
+├── app.js # Main server file
+├── package.json
+└── .env # Environment variables
 
