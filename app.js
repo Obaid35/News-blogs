@@ -19,21 +19,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //Database Connection
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => {
-    console.log("✅ MongoDB connected");
-    const port = process.env.PORT || 3000;
-    app.listen(port, "0.0.0.0", () => {
-        console.log(`Server running on port ${port}`);
-    });
-})
-.catch(err => {
-    console.error("❌ MongoDB connection failed:", err);
-    process.exit(1);
-});
+mongoose.connect(process.env.MONGODB_URI)
+    .then(() => console.log("✅ MongoDB connected"))
+    .catch(err => console.error("❌ MongoDB connection error:", err));
 
 // Routes
 app.use('/admin',(req, res, next) =>{
