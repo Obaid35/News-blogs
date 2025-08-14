@@ -1,73 +1,14 @@
-# 📰 News Blog CMS
+# News Blog CMS Project in NodeJS & ExpressJS 
 
-A full-stack **Content Management System** for managing and publishing news articles with a complete **Admin Panel** and a clean, user-friendly frontend.  
-Built with **Node.js, Express, EJS, and MongoDB (Mongoose)** following the **MVC architecture**.
+A News Blog CMS (Content Management System) project built with Node.js and MongoDB offers a robust and flexible solution for managing and publishing news articles and blog posts. This technology stack is a popular choice due to its "JavaScript everywhere" paradigm, allowing developers to use a single language for both client-side and server-side development, streamlining the development process.
 
----
 
-## 🚀 Features
+## Youtube Video link
 
-### 🔹 Backend (Admin Panel)
-- **Role-Based Authentication** – Admin/User roles with login & logout
-- **Secure Route Protection** – Only authorized users can access admin pages
-- **CRUD Operations** – Users, Categories, and Articles
-- **Dashboard & Settings** – Manage website details
-- **Pagination & Search**
-- **Error Handling & Form Validation**
-- **Bug Fixes & Performance Optimization**
+[NodeJS Course Video Playlist](https://www.youtube.com/playlist?list=PL0b6OzIxLPbx0ZTmVQgsB4T5KWXXxrZ6C)
 
-### 🔹 Frontend (User Side)
-- **Home Page** – Dynamic news listing
-- **Category-wise & Author-wise News Pages**
-- **Search News by Keywords**
-- **Recent News Widget**
-- **Pagination**
-- **Comment System**
-- **Customizable Website Logo, Title, Footer**
-- **Responsive Layout**
+## Follow Us
 
----
+[www.yahubaba.com](https://www.yahubaba.com)
 
-## 🛠 Tech Stack
-
-**Backend:**  
-- Node.js  
-- Express.js  
-- MongoDB (Mongoose)  
-
-**Frontend:**  
-- EJS  
-- Express EJS Layouts  
-
-**Utilities & Packages:**  
-- bcryptjs  
-- connect-flash  
-- cookie-parser  
-- dotenv  
-- express-session  
-- express-validator  
-- jsonwebtoken (JWT)  
-- mongoose-paginate-v2  
-- multer  
-- slugify  
-- nodemon  
-
----
-
-## 📂 Project Structure
-news-cms-project/
-│
-├── controllers/ # All controller files for handling logic
-├── middlewares/ # All middleware files
-├── models/ # Mongoose schemas
-├── public/ # Static assets (CSS, JS, images)
-├── routes/ # Express routes for frontend & backend
-├── views/ # EJS templates
-│ ├── admin/ # Admin panel views
-│ ├── partials/ # Admin panel views
-│ ├── / # Frontend views
-│
-├── app.js # Main server file
-├── package.json
-└── .env # Environment variables
-
+[Youtube Channel](https://www.youtube.com/yahoobaba)
