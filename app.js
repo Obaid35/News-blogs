@@ -19,7 +19,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //Database Connection
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    ssl: true,
+    tls: true
+})
+.then(() => console.log("✅ MongoDB connected"))
+.catch(err => {
+    console.error("❌ MongoDB connection error:", err);
+    process.exit(1);
+});
 
 // Routes
 app.use('/admin',(req, res, next) =>{
@@ -34,3 +44,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
