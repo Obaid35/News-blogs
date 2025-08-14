@@ -21,13 +21,17 @@ app.set('view engine', 'ejs');
 //Database Connection
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    ssl: true,
-    tls: true
+    useUnifiedTopology: true
 })
-.then(() => console.log("✅ MongoDB connected"))
+.then(() => {
+    console.log("✅ MongoDB connected");
+    const port = process.env.PORT || 3000;
+    app.listen(port, "0.0.0.0", () => {
+        console.log(`Server running on port ${port}`);
+    });
+})
 .catch(err => {
-    console.error("❌ MongoDB connection error:", err);
+    console.error("❌ MongoDB connection failed:", err);
     process.exit(1);
 });
 
@@ -44,4 +48,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
 
